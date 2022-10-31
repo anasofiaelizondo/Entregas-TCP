@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Mulish:wght@200&display=swap" rel="stylesheet">    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejemplo layout flexbox</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function myFunction() {
+            const navigationBar = document.getElementById("navigation-bar");
+            if (navigationBar.className === "navigation-bar") {
+                navigationBar.className += " responsive";
+            } else {
+                navigationBar.className = "navigation-bar";
+            }
+        }
+    </script>
+</head>
+<body>
+<header id="header">
+    <h1> Rafael Nadal </h1>
+    <p>1986 - Presente</p>
+</header>
+
+<nav id="navigation-bar" class="navigation-bar">
+    <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="#">Piano</a></li>
+        <li><a href="#">Página 3</a></li>
+        <li class="menu__hamburger-icon">
+            <a href="javascript:void(0);" onclick="myFunction()">
+                <i class="lni lni-menu"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<div id="main-content-container">
+    <aside id="links-sidebar">
+        <h2>Sitios de interés</h2>
+        <ul>
+            <li><a href="https://www.instagram.com/rafaelnadal/">Instagram @rafaelnadal</a></li>
+            <li><a href="https://twitter.com/RafaelNadal?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter @rafaelnadal</a></li>
+            <li><a href="https://www.atptour.com/es/players/rafael-nadal/n409/overview">ATP Rafael Nadal</a></li>
+            <li><a href="https://cnnespanol.cnn.com/tag/rafael-nadal/">Noticias más recientes</a></li>
+        </ul>
+    </aside>
+    <section id="main-content">
+        <img src="https://imgresizer.eurosport.com/unsafe/1280x960/smart/filters:format(jpeg)/origin-imgresizer.eurosport.com/2022/02/01/3301569-67511648-2560-1440.jpg" alt="Rafael Nadal" class="main-content__img--full-width">
+
+        <h2>Biografía</h2>
+        <p>Rafael Nadal Parera nació el 3 de junio de 1986 en la localidad mallorquina de Manacor, donde los Nadal forman una gran familia arraigada en la isla desde el siglo XIV. El patriarca de la saga se llama como su nieto, Rafael, y es un gran aficionado a la música que dirige la orquesta de la ciudad. Es hijo de Sebastián Nadal, director de una empresa que construye pistas de pádel y organiza eventos deportivos, y Ana María Parera, y tiene una hermana, Isabel, su admiradora más entusiasta. Fue su tío Antonio, Toni, quien lo encaminó por el sendero del tenis, hasta convertirse en su entrenador y representante.</p>
+        <p>A pesar de que al niño se le daba mejor la raqueta (a los cuatro años Toni practicaba con él varias horas al día) que el fútbol (no en vano se proclamó campeón infantil de España a los once años y del Mundo a los catorce), el pequeño Rafa se entusiasmaba cada vez más por el balompié, atraído sin duda por la estela de su otro tío, el futbolista internacional Miquel Àngel Nadal. Toni cortó de raíz esta indecisión y le conminó a abandonar los estudios en 4º de ESO para dedicarse en exclusiva al tenis, ante el disgusto materno: “Rafa se hizo profesional demasiado pronto. Al principio yo lo llevaba muy mal, pero finalmente entendí que era imposible compaginar los estudios con su carrera deportiva”.
+            </p>
+        <p>Rafael Nadal se inscribió en la ATP a finales de 2001, en el puesto 818. Tenía sólo quince años y pertenecía ya al Real Club de Tenis Barcelona. Sin embargo, no jugó su primer partido profesional hasta el 29 de abril de 2002, en el Open de Mallorca, derrotando al paraguayo Ramón Delgado.
+            <p>
+        <h2>Campeón de Roland Garros</h2>
+        <p>A pesar de ser un debutante, en 2005 se presentó en París como favorito en las apuestas. No en vano hasta aquella fecha, de enero a junio, había ganado cinco títulos de renombre en tierra batida: Costa de Sauipe (Brasil), Acapulco, el Master Series de Montecarlo, el trofeo Conde de Godó y el Masters Series de Roma, una proeza que, en una misma temporada y a esa edad, sólo había conseguido Andre Agassi en 1988. En número de títulos de la temporada 2005 tan sólo le aventajaba en uno el número uno mundial, el suizo Roger Federer, a quien, sin embargo, derrotó en Roland Garros en semifinales, precisamente el 3 de junio, el día del cumpleaños de Nadal. </p>
+        <p>En la final, no sin ciertos apuros, Nadal derrotó en cuatro sets al argentino Mariano Puerta, que había realizado un torneo impecable. Le entregó el trofeo, en presencia del rey Juan Carlos I de España, su ídolo futbolístico, Zinedine Zidane, pues, a pesar de que toda su familia es del Barça, Rafa es seguidor del Real Madrid.<p>
+         <img src=https://www.elindependiente.com/wp-content/uploads/2020/06/14dddbac10437fe78e389dbbde5addeeb530e2da_20050605_rg_cd_2046_web.jpg alt="Rafael Nadal Roland Garros 2005" class="main-content__img--full-width">
+
+        </section>
+</div>
+
+<footer id="footer">
+    <div class="footer__social footer__section">
+        <h2>Mis redes</h2>
+
+        <div class="social__networks">
+            <div class="social__network">
+                <span class="social__icon-container"><i class="lni lni-github-original social__icon"></i></span>
+                <h5>Github</h5>
+                <span class="social__icon-handler"> <a href="https://github.com/anasofiaelizondo"> anasofiaelizondo </a> </span>
+            </div>
+
+            <div class="social__network">
+                <span class="social__icon-container"><i class="lni lni-linkedin-original social__icon"></i></span>
+                <h5>Linkedin</h>
+                <span class="social__icon-handler">
+                    <a href=> Sofia Elizondo </a>
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer__contact-form footer__section">
+        <h2>Contacto</h2>
+        <div>
+            <form>
+                <label for="contactEmail"> Correo electronico:</label>
+                <input id="contactEmail" required type="email" placeholder="Ingresa tu correo electronico">
+
+                <label for="contactMessage"> Mensaje:</label>
+                <textarea id="contactMessage" required rows="4" cols="50"> </textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <div class="footer__more-sites footer__section">
+        <h2>Otros de mis sitios</h2>
+        <ul>
+            <li><a href="#">Sitio 1</a></li>
+            <li><a href="#">Sitio 2</a></li>
+            <li><a href="#">Sitio 3</a></li>
+            <li><a href="#">Sitio 4</a></li>
+            <li><a href="#">Sitio 5</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
