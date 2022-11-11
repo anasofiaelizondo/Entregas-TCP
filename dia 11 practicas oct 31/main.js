@@ -1,5 +1,5 @@
 const nombre = 'Ana Sofia';
-const edad = 39;
+const edad = 18;
 const likesMusic = true;
 
 const nombreElement = document.querySelector('span#name');
@@ -7,7 +7,7 @@ const edadElement = document.querySelector('span#age');
 const likesMusicElement = document.querySelector('span#likesMusic');
 
 nombreElement.textContent = nombre;
-edadElement.textContent = age;
+edadElement.textContent = edad;
 
 if(likesMusic === true){
     likesMusicElement.textContent = 'me gusta la musica';
